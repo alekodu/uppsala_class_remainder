@@ -12,6 +12,7 @@ dict = {}
 
 def process_text(message):
     incomming_text = message.text
+    print(message.sender.id, dict)
     if 'https://se.timeedit.net/web/uu/db1/schema/s.ics' in incomming_text:
         dict[message.sender.id] = message.text
         return class_remainder.get_stuff(incomming_text)
