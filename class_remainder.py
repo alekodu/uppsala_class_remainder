@@ -1,5 +1,5 @@
 from icalendar import *
-import urllib2
+import urllib.request
 
 def start_time(event):
     return event['DTSTART'].dt
@@ -12,7 +12,7 @@ def location(event):
     return event['LOCATION'].encode('utf-8')
 
 def get_stuff(url):
-    file = urllib2.urlopen(url)
+    file = urllib.urlopen(url)
     g = file.read()
     gcal = Calendar.from_ical(g)
 
