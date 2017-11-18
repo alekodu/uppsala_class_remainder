@@ -18,6 +18,6 @@ def get_stuff(url):
 
     sessions = [(lecturize(e), start_time(e), location(e)) for e in gcal.walk('vevent')]
 
-    return sessions[0][1]
+    return sessions[0][0] + '\n' + sessions[0][1] + '\n' + sessions[0][2]
 
 #print get_stuff('https://se.timeedit.net/web/uu/db1/schema/s.ics?i=yQ99053X5Z69Q096546X6Z690544400259053Q9561Y59Y504YX5953556Z0XW90nQY255')
