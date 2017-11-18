@@ -16,7 +16,7 @@ def process_text(message):
         dict[message.sender.id] = message.text
         return class_remainder.get_stuff(incomming_text)
     elif incomming_text == 'next':
-        if message.sender.id in dict:
+        if message.sender.id in dict.keys():
             return class_remainder.get_stuff(dict(message.sender.id))
         else:
             return "I'm sorry " + message.sender.first_name + " I don't have your calendar! \n Please send your calendar link from TimeEdit."
