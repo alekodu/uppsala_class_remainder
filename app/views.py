@@ -8,17 +8,17 @@ import class_remainder
 from app import application
 from app import bot
 
-dict = {}
+dict_student = {}
 
 def process_text(message):
     incomming_text = message.text
-    print(message.sender.id, dict)
+    print(message.sender.id, dict_student)
     if 'https://se.timeedit.net/web/uu/db1/schema/s.ics' in incomming_text:
-        dict[message.sender.id] = message.text
+        dict_student[message.sender.id] = message.text
         return class_remainder.get_stuff(incomming_text)
     elif incomming_text == 'next':
-        if message.sender.id in dict.keys():
-            return class_remainder.get_stuff(dict(message.sender.id))
+        if message.sender.id in dict_student.keys():
+            return class_remainder.get_stuff(dict_student[message.sender.id])
         else:
             return "I'm sorry " + message.sender.first_name + " I don't have your calendar! \n Please send your calendar link from TimeEdit."
     else:
