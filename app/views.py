@@ -1,10 +1,13 @@
+import json
 import time
+
 from flask import render_template, request, Response
 from twx.botapi import Message
+
+import class_remainder
 from app import application
 from app import bot
-import json
-import class_remainder
+
 
 def process_text(message):
     incomming_text = message.text
