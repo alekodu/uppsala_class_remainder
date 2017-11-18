@@ -33,5 +33,3 @@ def get_stuff(url):
     session = get_latest_session(sessions)
     return str(session[0]) + '\n' + str(session[1]) + '\n' + str(session[2])
     #return str(sessions[0][0]) + '\n' + str(sessions[0][1]) + '\n' + str(sessions[0][2])
-
-#print get_stuff('https://se.timeedit.net/web/uu/db1/schema/s.ics?i=yQ99053X5Z69Q096546X6Z690544400259053Q9561Y59Y504YX5953556Z0XW90nQY255')
