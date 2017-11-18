@@ -18,11 +18,15 @@
  -Gustav Fredriksson <br>
  -Aleksandra Obeso <br>
  -Mauro José Pappaterra <br>
- 
-  <br>
+ <br>
   
   
-  Our Project:
+  Our Project: Uppsala Knowledge System for New Comers
+  Description: We came up with the idea of creating a chatbot that provides with information about 
+  living and studying in Uppsala to new students and people new to the city!
+  The knowledge base includes information about the faculty courses and building locations, how to get around, what courses are offered,
+  information about accomodation, night life and bars, any events and historic facts are also available.
+  
   
   
 
