@@ -8,11 +8,18 @@ import class_remainder
 from app import application
 from app import bot
 
+dict = {}
 
 def process_text(message):
     incomming_text = message.text
     if 'https://se.timeedit.net/web/uu/db1/schema/s.ics' in incomming_text:
+        dict[message.sender.id] = message.text
         return class_remainder.get_stuff(incomming_text)
+    elif incomming_text == 'next':
+        if message.sender.id in dict:
+            return class_remainder.get_stuff(dict(message.sender.id))
+        else:
+            return "I'm sorry " + message.sender.first_name + " I don't have your calendar! \n Please send your calendar link from TimeEdit."
     else:
         return incomming_text
 
@@ -41,6 +48,7 @@ def incoming():
         chat_id = msg.chat.id
         print('Responding to chat %i using token %s' % (chat_id, bot.token))
         print(msg)
+
         response_text = process_text(msg)
         resp = bot.send_message(
             chat_id=chat_id,
