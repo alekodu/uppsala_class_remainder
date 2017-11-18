@@ -21,11 +21,11 @@
  <br>
   
   
-  <b>Our Project:</b> Uppsala Knowledge System for New Comers<br>
+  <b>Our Project:</b> Uppsala Knowledge System for New Students<br>
   <b>Description:</b> We came up with the idea of creating a chatbot that provides with information about 
   living and studying in Uppsala to new students and people new to the city!
-  The knowledge base includes information about the faculty courses and building locations, how to get around, what courses are offered,
-  information about accomodation, night life and bars, any events and historic facts are also available.
+  The knowledge base includes information about the faculty courses and building locations, how to get around the city,
+  information about accommodation, night life, clubs and bars, any events and festivals, and also historic facts about the city and the University.
   
   
   
