@@ -4,10 +4,12 @@ from twx.botapi import Message
 from app import application
 from app import bot
 import json
+import class_remainder
 
 def process_text(message):
     incomming_text = message.text
-    # Your code goes here
+    if 'https://se.timeedit.net/web/uu/db1/schema/s.ics' in incomming_text:
+        return class_remainder.get_stuff(incomming_text)
     my_response = incomming_text
     return my_response
 
