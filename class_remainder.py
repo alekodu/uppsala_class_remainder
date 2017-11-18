@@ -12,7 +12,7 @@ def location(event):
     return event['LOCATION'].encode('utf-8')
 
 def get_stuff(url):
-    file = urllib.urlopen(url)
+    file = urllib.request.urlopen(url)
     g = file.read()
     gcal = Calendar.from_ical(g)
 
