@@ -11,7 +11,6 @@ from app import bot
 dict_student = {}
 
 def process_text(message):
-    global dict_student
     incomming_text = message.text
     print(message.sender.id, dict_student)
     if 'https://se.timeedit.net/web/uu/db1/schema/s.ics' in incomming_text:
