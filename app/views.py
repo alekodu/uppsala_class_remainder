@@ -11,6 +11,7 @@ from app import bot
 dict_student = {}
 
 def process_text(message):
+    global dict_student
     incomming_text = message.text
     print(message.sender.id, dict_student)
     if 'https://se.timeedit.net/web/uu/db1/schema/s.ics' in incomming_text:
@@ -20,7 +21,7 @@ def process_text(message):
         if message.sender.id in dict_student.keys():
             return class_remainder.get_stuff(dict_student[message.sender.id])
         else:
-            return "I'm sorry " + message.sender.first_name + " I don't have your calendar! \n Please send your calendar link from TimeEdit."
+            return "I'm sorry " + message.sender.first_name + " I don't have your calendar!\nPlease send your calendar link from TimeEdit."
     else:
         return incomming_text
 
