@@ -20,4 +20,4 @@ def get_stuff(url):
 
     return sessions[0]
 
-print get_stuff('https://se.timeedit.net/web/uu/db1/schema/s.ics?i=yQ99053X5Z69Q096546X6Z690544400259053Q9561Y59Y504YX5953556Z0XW90nQY255')
+#print get_stuff('https://se.timeedit.net/web/uu/db1/schema/s.ics?i=yQ99053X5Z69Q096546X6Z690544400259053Q9561Y59Y504YX5953556Z0XW90nQY255')
