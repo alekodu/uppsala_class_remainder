@@ -15,7 +15,7 @@ def location(event):
 def get_latest_session(sessions):
     right_now = datetime.datetime.now()
     smallest_diff = sessions[0][1] - right_now
-    print smallest_diff
+    print(smallest_diff)
     s = sessions[0]
     for session in sessions:
         current_diff = session[1] - right_now
