@@ -13,7 +13,7 @@ def location(event):
     return event['LOCATION'].encode('utf-8')
 
 def get_latest_session(sessions):
-    right_now = datetime.datetime.now()
+    right_now = datetime.datetime.now(sessions[0][1].tzinfo)
     smallest_diff = sessions[0][1] - right_now
     s = sessions[0]
     for session in sessions:
